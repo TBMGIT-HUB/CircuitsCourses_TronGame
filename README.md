@@ -7,10 +7,10 @@ Ce projet transforme un microcontrôleur **Seeed Studio XIAO ESP32-S3** en une c
 
 ## 🛠️ Schématique et Architecture Matérielle (PCB IFT-S3)
 
-La conception matérielle de la carte **IFT-S3** s'articule autour des composants suivants[cite: image/capture PCB 1.png] :
+La conception matérielle de la carte **IFT-S3** s'articule autour des composants suivants ![](image/capture PCB 1.png) :
 
-* **Microcontrôleur :** Seeed Studio XIAO ESP32-S3 (connecteur U1) ![cite: image/capture PCB 1.png].
-* **Affichage OLED :** Écran 128x64 pixels (contrôleur SSD1306, interface I2C à 400 kHz) branché sur le connecteur `J1` (`SDA`, `SCL`, `3.3V`, `GND`)[cite: image/capture PCB 1.png].
+* **Microcontrôleur :** Seeed Studio XIAO ESP32-S3 (connecteur U1) ![](image/capture PCB 1.png) .
+* **Affichage OLED :** Écran 128x64 pixels (contrôleur SSD1306, interface I2C à 400 kHz) branché sur le connecteur `J1` (`SDA`, `SCL`, `3.3V`, `GND`)![](image/capture PCB 1.png) .
 * **Matrice de Clavier $3\times3$ :** Grille de 8 boutons (`Up`, `Right`, `A`, `Left`, `Select`, `B`, `Down`, `Start`) sécurisée par des diodes anti-retour `1N4148WS` pour éviter les courants de rebouclage lors d'appuis multiples[cite: image/capture PCB 1.png, image/capture PCB 2.png].
 * **Alimentation & Puissance :** Emplacement pour batterie Li-Po (`J7`), interrupteur de mise sous tension (`S3`)[cite: image/capture PCB 1.png], et étages MOSFET optionnels (`IRLZ44N`) pilotés par `Tr_GATE` / `Tr_GATE2`[cite: image/capture PCB 1.png].
 * **Périphériques additionnels :** Ligne de LED Neopixel RGB optionnelle connectée sur la broche `RGB_LEDs` (`GPIO4/D3/A3`) via une résistance de protection de 330 ohms (`R4`)[cite: image/capture PCB 1.png].
