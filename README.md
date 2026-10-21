@@ -50,9 +50,18 @@ La conception matérielle de la carte **IFT-S3** s'articule autour des composant
 
 ### Étape 2 : Lancement d'une Partie (Hôte / J1)
 1. Au démarrage, naviguez dans le **Menu Principal** à l'aide des touches **Haut / Bas** et validez avec **A**.
+
+![](/image/MenuDepart.jpg) 
+
 2. Sélectionnez **1. Creer Partie** et confirmez.
-3. Le salon d'attente (SERVEUR) s'affiche avec le nom du réseau Wi-Fi et le compteur de joueurs ($1/4$).
+
+4. Le salon d'attente (SERVEUR) s'affiche avec le nom du réseau Wi-Fi et le compteur de joueurs ($1/4$).
+
+![](/image/AffichageMenuHote.jpg) 
+
 4. Pressez **START** pour lancer la partie une fois les participants rejoints.
+
+![](/image/AffichageEnJeu.png) 
 
 ### Étape 3 : Rejoindre une Partie (Clients / J2 à J4)
 1. Sélectionnez **2. Rejoindre** depuis le menu principal.
@@ -62,4 +71,7 @@ La conception matérielle de la carte **IFT-S3** s'articule autour des composant
 ### 🎮 Contrôles en Jeu
 * **Croix directionnelle (Haut, Bas, Gauche, Droite) :** Piloter le serpent.
 * **START :** Mettre le jeu en pause (réservé à l'hôte).
+
+![](/image/MenuPause.jpg)   
+
 * **SELECT :** Quitter la partie en cours / déconnecter le serveur.
