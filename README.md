@@ -7,7 +7,7 @@ Ce projet transforme un microcontrôleur **Seeed Studio XIAO ESP32-S3** en une c
 
 ## 🛠️ Schématique et Architecture Matérielle (PCB IFT-S3)
 
-La conception matérielle de la carte **IFT-S3** s'articule autour des composants suivants ![](image/capture PCB 1.png) :
+La conception matérielle de la carte **IFT-S3** s'articule autour des composants suivants ![](/image/capture PCB 1.png):
 
 * **Microcontrôleur :** Seeed Studio XIAO ESP32-S3 (connecteur U1) ![](image/capture PCB 1.png) .
 * **Affichage OLED :** Écran 128x64 pixels (contrôleur SSD1306, interface I2C à 400 kHz) branché sur le connecteur `J1` (`SDA`, `SCL`, `3.3V`, `GND`)![](image/capture PCB 1.png) .
