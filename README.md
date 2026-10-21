@@ -1,23 +1,23 @@
 ## CircuitsCourses_TronGame
 # 🕹️ Multiplayer Snake sur XIAO ESP32-S3 (Console IoT & Rétrogaming)
 
-Ce projet transforme un microcontrôleur **Seeed Studio XIAO ESP32-S3** en une console de jeu miniature et connectée[cite: 1]. Grâce à sa puce Wi-Fi intégrée et l'implémentation de **WebSockets**, il gère une architecture **Serveur / Client** permettant à **4 joueurs maximum** de s'affronter en réseau local sans routeur externe (le serveur héberge son propre point d'accès Wi-Fi).
+Ce projet transforme un microcontrôleur **Seeed Studio XIAO ESP32-S3** en une console de jeu miniature et connectée. Grâce à sa puce Wi-Fi intégrée et l'implémentation de **WebSockets**, il gère une architecture **Serveur / Client** permettant à **4 joueurs maximum** de s'affronter en réseau local sans routeur externe (le serveur héberge son propre point d'accès Wi-Fi).
 
 ---
 
 ## 🛠️ Schématique et Architecture Matérielle (PCB IFT-S3)
 
-La conception matérielle de la carte **IFT-S3** s'articule autour des composants suivants ![](/image/capture_PCB_1.png):
+La conception matérielle de la carte **IFT-S3** s'articule autour des composants suivants ![](/image/capture_PCB_1.png) ![](/image/capture_PCB_2.png):
 
-* **Microcontrôleur :** Seeed Studio XIAO ESP32-S3 (connecteur U1) ![](/image/capture_PCB_1.png).
-* **Affichage OLED :** Écran 128x64 pixels (contrôleur SSD1306, interface I2C à 400 kHz) branché sur le connecteur `J1` (`SDA`, `SCL`, `3.3V`, `GND`)![](/image/capture_PCB_1.png).
-* **Matrice de Clavier $3\times3$ :** Grille de 8 boutons (`Up`, `Right`, `A`, `Left`, `Select`, `B`, `Down`, `Start`) sécurisée par des diodes anti-retour `1N4148WS` pour éviter les courants de rebouclage lors d'appuis multiples![](/image/capture_PCB_1.png) ![](/image/capture_PCB_2.png).
-* **Alimentation & Puissance :** Emplacement pour batterie Li-Po (`J7`), interrupteur de mise sous tension (`S3`)[cite: image/capture PCB 1.png], et étages MOSFET optionnels (`IRLZ44N`) pilotés par `Tr_GATE` / `Tr_GATE2`![](/image/capture_PCB_1.png).
-* **Périphériques additionnels :** Ligne de LED Neopixel RGB optionnelle connectée sur la broche `RGB_LEDs` (`GPIO4/D3/A3`) via une résistance de protection de 330 ohms (`R4`)![](/image/capture_PCB_1.png).
+* **Microcontrôleur :** Seeed Studio XIAO ESP32-S3 (connecteur U1).
+* **Affichage OLED :** Écran 128x64 pixels (contrôleur SSD1306, interface I2C à 400 kHz) branché sur le connecteur `J1` (`SDA`, `SCL`, `3.3V`, `GND`).
+* **Matrice de Clavier $3\times3$ :** Grille de 8 boutons (`Up`, `Right`, `A`, `Left`, `Select`, `B`, `Down`, `Start`) sécurisée par des diodes anti-retour `1N4148WS` pour éviter les courants de rebouclage lors d'appuis multiples.
+* **Alimentation & Puissance :** Emplacement pour batterie Li-Po (`J7`), interrupteur de mise sous tension (`S3`), et étages MOSFET optionnels (`IRLZ44N`) pilotés par `Tr_GATE` / `Tr_GATE2`.
+* **Périphériques additionnels :** Ligne de LED Neopixel RGB optionnelle connectée sur la broche `RGB_LEDs` (`GPIO4/D3/A3`) via une résistance de protection de 330 ohms (`R4`).
 
 ### Pinout de la Matrice de Clavier
-* **Colonnes (`COL_PINS`) :** `D7` (Col 0), `D1` (Col 1), `D6` (Col 2)![](/image/capture_PCB_1.png).
-* **Lignes (`ROW_PINS`) :** `D8` (Ligne 0), `D10` (Ligne 1), `D9` (Ligne 2)![](/image/capture_PCB_1.png).
+* **Colonnes (`COL_PINS`) :** `D7` (Col 0), `D1` (Col 1), `D6` (Col 2).
+* **Lignes (`ROW_PINS`) :** `D8` (Ligne 0), `D10` (Ligne 1), `D9` (Ligne 2).
 
 ---
 
